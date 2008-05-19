@@ -1,6 +1,6 @@
 %define module   YAML-Tiny
 %define version    1.32
-%define release    %mkrel 1
+%define release    %mkrel 2
 
 Name:       perl-%{module}
 Version:    %{version}
@@ -16,7 +16,6 @@ BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
-
 *YAML::Tiny* is a perl class for reading and writing YAML-style files,
 written with as little code as possible, reducing load time and memory
 overhead.
