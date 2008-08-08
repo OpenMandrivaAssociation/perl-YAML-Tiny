@@ -1,6 +1,6 @@
 %define module   YAML-Tiny
 %define version    1.32
-%define release    %mkrel 2
+%define release    %mkrel 3
 
 Name:       perl-%{module}
 Version:    %{version}
