@@ -1,19 +1,20 @@
-%define module   YAML-Tiny
-%define version    1.39
-%define release    %mkrel 1
+%define upstream_name    YAML-Tiny
+%define upstream_version 1.39
 
-Name:       perl-%{module}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
-Group:      Development/Perl
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:    Read/Write YAML files with as little code as possible
-Url:        http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/YAML/%{module}-%{version}.tar.gz
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/YAML/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(File::Spec)
 BuildRequires: perl(Test::More)
 BuildArch: noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 *YAML::Tiny* is a perl class for reading and writing YAML-style files,
@@ -31,7 +32,7 @@ said *human-readable* and not *geek-readable*. The sort of files that your
 average manager or secretary should be able to look at and make sense of.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -52,4 +53,3 @@ rm -rf %{buildroot}
 %doc LICENSE README Changes
 %{_mandir}/man3/*
 %perl_vendorlib/YAML
-
