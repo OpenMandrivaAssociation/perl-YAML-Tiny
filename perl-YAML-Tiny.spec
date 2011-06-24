@@ -1,9 +1,9 @@
 %define upstream_name    YAML-Tiny
-%define upstream_version 1.48
+%define upstream_version 1.50
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 1
 
 Summary:    Read/Write YAML files with as little code as possible
 License:    GPL+ or Artistic
