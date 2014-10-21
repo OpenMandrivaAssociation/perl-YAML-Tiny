@@ -1,2 +1,4 @@
+removed_sources:
+  YAML-Tiny-1.50.tar.gz: a02e0d380559681bbb6d33513805cd4b5e52bd76
 sources:
-  "YAML-Tiny-1.50.tar.gz": a02e0d380559681bbb6d33513805cd4b5e52bd76
+  YAML-Tiny-1.64.tar.gz: 4f099b00e7ae2d82295803c6cf520f5b83db7fd7
