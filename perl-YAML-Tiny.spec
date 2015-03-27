@@ -1,10 +1,10 @@
 %define modname	YAML-Tiny
-%define modver 1.64
+%define modver 1.66
 
 Summary:	Read/Write YAML files with as little code as possible
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -33,7 +33,7 @@ average manager or secretary should be able to look at and make sense of.
 %setup -qn %{modname}-%{modver}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
