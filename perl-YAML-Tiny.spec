@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/YAML/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	perl(JSON::PP)
 BuildRequires:	perl(File::Spec)
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
