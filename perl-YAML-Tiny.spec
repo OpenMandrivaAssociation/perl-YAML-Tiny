@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	6
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/YAML::Tiny
+Url:		https://metacpan.org/pod/YAML::Tiny
 Source0:	http://www.cpan.org/modules/by-module/YAML/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(JSON::PP)
