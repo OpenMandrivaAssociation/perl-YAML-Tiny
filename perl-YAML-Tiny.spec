@@ -1,14 +1,13 @@
 %define modname	YAML-Tiny
-%define modver 1.73
 
 Summary:	Read/Write YAML files with as little code as possible
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	7
+Version:	1.74
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/YAML::Tiny
-Source0:	http://www.cpan.org/modules/by-module/YAML/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/YAML/%{modname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(JSON::PP)
 BuildRequires:	perl(File::Spec)
@@ -31,17 +30,17 @@ said *human-readable* and not *geek-readable*. The sort of files that your
 average manager or secretary should be able to look at and make sense of.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{version}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+perl Makefile.PL INSTALLDIRS=vendor
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc LICENSE README Changes
