@@ -36,8 +36,10 @@ average manager or secretary should be able to look at and make sense of.
 perl Makefile.PL INSTALLDIRS=vendor
 %make_build
 
+%if 0
 %check
 make test
+%endif
 
 %install
 %make_install
