@@ -2,7 +2,7 @@
 
 Summary:	Read/Write YAML files with as little code as possible
 Name:		perl-%{modname}
-Version:	1.74
+Version:	1.76
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
