@@ -9,6 +9,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/YAML::Tiny
 Source0:	http://www.cpan.org/modules/by-module/YAML/%{modname}-%{version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl(JSON::PP)
 BuildRequires:	perl(File::Spec)
 BuildRequires:	perl(Test::More)
